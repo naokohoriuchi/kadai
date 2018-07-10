@@ -7,6 +7,12 @@
 <title>初期画面</title>
 </head>
 <body>
-
+	<table border="1">
+		<tr>
+			<th>日付</th>
+			<td>2018/07/31</td>
+		</tr>
+	</table>
+	<p>凡例　A：電車、B：タクシー、C：バス</p>
 </body>
 </html>
