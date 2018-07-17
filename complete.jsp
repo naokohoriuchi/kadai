@@ -7,7 +7,11 @@
 <title>完了画面</title>
 </head>
 <body>
-	<p align="center">登録が完了しました。</p>
-	<s:link href="/transportation"><html:img src="../image/indexBtn.png" /></s:link>
+	<div align="center">
+		<p>登録が完了しました。</p>
+		<s:link href="/transportation">
+			<img src="\sastruts\image\indexBtn.png" />
+		</s:link>
+	</div>
 </body>
 </html>
