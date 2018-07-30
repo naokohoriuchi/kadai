@@ -4,68 +4,43 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="/sastruts/css/transportation.css" />
 <title>確認画面</title>
 </head>
 <body>
 <body>
-	<table border="1">
+	<table width="100%" height="100%" border=1>
 		<tr>
-			<th>日付</th>
-			<td>2018/07/31</td>
+			<td>
+				<table id="date">
+					<tr>
+						<th>日付</th>
+						<td>2018/07/31</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<p>凡例 A：電車 B：タクシー C：バス</p>
+			</td>
+			<td>
+				<table id="department">
+					<tr>
+						<th>部署</th>
+						<td>企画開発部</td>
+					</tr>
+					<tr>
+						<th>名前</th>
+						<td>おがわ</td>
+					</tr>
+				</table>
+			</td>
 		</tr>
+		<tr></tr>
+		<tr></tr>
 	</table>
-	<p>凡例 A：電車、B：タクシー、C：バス</p>
-
-	<table border="0.5">
-		<tr>
-			<th>部署</th>
-			<td></td>
-		</tr>
-		<tr>
-			<th>名前</th>
-			<td></td>
-		</tr>
-	</table>
-	<br>
-	<table border="0.5">
-		<tr>
-			<th>日付</th>
-			<th>行き先</th>
-			<th>乗車別</th>
-			<th>出発地</th>
-			<th>-</th>
-			<th>目的地</th>
-			<th>金額</th>
-			<th>備考</th>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td><tr>
 
 
-	</table>
-	<br>
-	<table border="0.5">
-		<tr>
-			<th>電車</th>
-			<td></td>
-		</tr>
-		<tr>
-			<th>タクシー</th>
-			<td></td>
-		</tr>
-		<tr>
-			<th>バス</th>
-			<td></td>
-		</tr>
-	</table>
-	<p>合計：　円</p>
 </body>
 
 </html>
