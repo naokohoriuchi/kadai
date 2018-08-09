@@ -2,7 +2,9 @@ package org.seasar.sastruts.example.action;
 
 import javax.annotation.Resource;
 
+import org.seasar.framework.beans.util.Beans;
 import org.seasar.sastruts.example.dto.GetTransportationDto;
+import org.seasar.sastruts.example.dto.PrmTransportationDto;
 import org.seasar.sastruts.example.form.TransportationForm;
 import org.seasar.sastruts.example.service.TransportationServecice;
 import org.seasar.struts.annotation.ActionForm;
@@ -23,6 +25,9 @@ public class TransportationAction {
 	@ActionForm
 	protected TransportationForm transportationForm;
 
+	@Resource
+	protected PrmTransportationDto prmDto;
+
 	/**
 	 * 初期表示
 	 *
@@ -30,7 +35,7 @@ public class TransportationAction {
 	 */
 	@Execute(validator = false)
 	public String index() {
-		GetTransportationDto getTransportationDto = transportationServecice.doGetTransportationData();
+		GetTransportationDto getDto = transportationServecice.doGetTransportationData();
 		return "index.jsp";
 	}
 
@@ -41,6 +46,7 @@ public class TransportationAction {
 	 */
 	@Execute(validator = false)
 	public String confirm() {
+		prmDto = Beans.createAndCopy(PrmTransportationDto.class, transportationForm).execute();
 		return "confirm.jsp";
 	}
 
@@ -51,6 +57,7 @@ public class TransportationAction {
 	 */
 	@Execute(validator = false)
 	public String complete() {
+		transportationServecice.setTransportaionData(prmDto);
 		return "complete.jsp";
 	}
 
