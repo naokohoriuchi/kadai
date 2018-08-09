@@ -24,6 +24,7 @@ public class TransportationServecice {
 	 */
 	public GetTransportationDto doGetTransportationData() {
 		GetTransportationDto getTransportationDto = new GetTransportationDto();
+		jdbcManager.selectBySqlFile(GetTransportationDto.class, "").getSingleResult();
 		return getTransportationDto;
 	}
 
